@@ -24,6 +24,14 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 | USERNAME           | Bahmni username                 | superman                                                                      |
 | USERNAME           | Bahmi password                  | Admin123                                                                      |
 
+### Inputs
+
+1. copy your procedures csv file into the `public` directory. The csv file **MUST** have the following fields:
+
+| Target code                                     | Body Site Categories   |
+| ----------------------------------------------- | ---------------------- |
+| snomed code for the procedure e.g. (1119420003) | Body site e.g. (Head) |
+
 ### Commands
 
 Run these commands from within the root folder.
