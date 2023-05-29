@@ -8,7 +8,7 @@ import { saveValueSets, saveStatus, printStatus } from './services/createFhirPro
 
 dotenv.config();
 
-const { SAVE_VALUESET_URL } = process.env;
+const { VALUESET_URL } = process.env;
 const postValueSets = async () => {
   try {
     const outputFiles = fs.readdirSync('output');
@@ -44,7 +44,7 @@ const postValueSets = async () => {
           const payload = JSON.stringify(value);
           const config = {
             method: 'post',
-            url: SAVE_VALUESET_URL,
+            url: VALUESET_URL,
             headers: {
               'Content-Type': 'application/json',
             },

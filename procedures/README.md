@@ -19,12 +19,13 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 
 | Variable          | Description                     | Example                                                                       |
 | ----------------- | ------------------------------- | ----------------------------------------------------------------------------- |
-| SAVE_VALUESET_URL | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet                            |
+| VALUESET_URL      | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet                            |
 | BAHMNI_SERVER_URL | Bahmni procedures endpoint      | https://{bahmni.instance.com}/openmrs/ws/rest/v1/terminologyServices/valueSet |
 | USERNAME          | Bahmni username                 | superman                                                                      |
 | PASSWORD          | Bahmi password                  | Admin123                                                                      |
 
 ### Inputs
+
 Disclaimer: Bahmni doesn't ship with any curated content of procedures. It is individual's responsibility that is making use of this utility to upload procedures based on their requirements.
 
 1. copy your procedures csv file into the `public` directory. The csv file **MUST** have the following fields:
