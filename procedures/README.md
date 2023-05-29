@@ -25,6 +25,7 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 | PASSWORD          | Bahmi password                  | Admin123                                                                      |
 
 ### Inputs
+Disclaimer: Bahmni doesn't ship with any curated content of procedures. It is individual's responsibility that is making use of this utility to upload procedures based on their requirements.
 
 1. copy your procedures csv file into the `public` directory. The csv file **MUST** have the following fields:
 
