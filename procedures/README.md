@@ -1,6 +1,6 @@
 # Procedures Utility
 
-This repository contains the utility code for adding value sets to the snowstorm server.
+This repository contains the utility code for adding value sets to the snowstorm server and to Bahmni procedures.
 
 # Run
 
@@ -17,12 +17,12 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 
 ### Environment Variables
 
-| Variable           | Description                     | Example                                                                       |
-| ------------------ | ------------------------------- | ----------------------------------------------------------------------------- |
-| SAVE_VALUESET_URL  | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet                            |
-| BAHMNI_FHIR_SERVER | Bahmni procedures endpoint      | https://{bahmni.instance.com}/openmrs/ws/rest/v1/terminologyServices/valueSet |
-| USERNAME           | Bahmni username                 | superman                                                                      |
-| USERNAME           | Bahmi password                  | Admin123                                                                      |
+| Variable          | Description                     | Example                                                                       |
+| ----------------- | ------------------------------- | ----------------------------------------------------------------------------- |
+| SAVE_VALUESET_URL | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet                            |
+| BAHMNI_SERVER_URL | Bahmni procedures endpoint      | https://{bahmni.instance.com}/openmrs/ws/rest/v1/terminologyServices/valueSet |
+| USERNAME          | Bahmni username                 | superman                                                                      |
+| PASSWORD          | Bahmi password                  | Admin123                                                                      |
 
 ### Inputs
 

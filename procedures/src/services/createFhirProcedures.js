@@ -7,7 +7,7 @@ import authHeader from '../config/auth';
 
 dotenv.config();
 
-const { BAHMNI_FHIR_SERVER_URL } = process.env;
+const { BAHMNI_SERVER_URL } = process.env;
 
 export const saveValueSets = async (valueSets) => {
   try {
@@ -15,7 +15,7 @@ export const saveValueSets = async (valueSets) => {
       valueSets.map(async (value) => {
         const config = {
           method: 'POST',
-          url: `${BAHMNI_FHIR_SERVER_URL}?valueSetId=${value.name}&locale=en&conceptClass=Procedure&conceptDatatype=N/A&contextRoot=Procedure Orders`,
+          url: `${BAHMNI_SERVER_URL}?valueSetId=${value.name}&locale=en&conceptClass=Procedure&conceptDatatype=N/A&contextRoot=Procedure Orders`,
           headers: {
             'Content-Type': 'application/json',
             Authorization: authHeader,
