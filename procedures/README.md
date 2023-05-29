@@ -1,6 +1,6 @@
 # Procedures Utility
 
-This repository contains the utility code for adding value sets to the snowstorm server and to Bahmni procedures.
+This repository contains the utility code for adding value sets to the snowstorm server and to Bahmni procedures. More details can be found in [this](https://bahmni.atlassian.net/wiki/spaces/BAH/pages/3132686337/SNOMED+FHIR+Terminology+Server+Integration+with+Bahmni) Wiki link
 
 # Run
 
