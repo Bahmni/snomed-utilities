@@ -1,0 +1,12 @@
+/node_modules
+
+# only include .gitkeep but not any other files in the output directory (use a pattern to exclude all files)
+output/**
+!output/.gitkeep
+
+logs/**
+!logs/.gitkeep
+
+public/**
+!public/.gitkeep
+
