@@ -9,10 +9,10 @@ dotenv.config();
 
 const { BAHMNI_SERVER_URL } = process.env;
 
-export const saveValueSets = async (valueSets) => {
+export const saveValueSets = async (valueSets, delay) => {
   try {
     const savedValueSets = await Promise.all(
-      valueSets.map(async (value) => {
+      valueSets.map(async (value, index) => {
         const config = {
           method: 'POST',
           url: `${BAHMNI_SERVER_URL}?valueSetId=${value.name}&locale=en&conceptClass=Procedure&conceptDatatype=N/A&contextRoot=Procedure Orders`,
@@ -21,6 +21,10 @@ export const saveValueSets = async (valueSets) => {
             Authorization: authHeader,
           },
         };
+
+        // Introduce a delay before each request
+        // eslint-disable-next-line no-promise-executor-return
+        await new Promise((resolve) => setTimeout(resolve, index * delay));
 
         const { data } = await axios(config);
         console.log({ name: value.name, url: data });
@@ -52,11 +56,10 @@ export const saveStatus = async (valueSets) => {
         };
         const { data } = await axios.request(config);
 
-        const logFile = fs.createWriteStream(
-          logsPath,
-          { flags: 'a' },
+        const logFile = fs.createWriteStream(logsPath, { flags: 'a' });
+        logFile.write(
+          `${new Date().toISOString()}: ${value.name}: ${data.status}\n`,
         );
-        logFile.write(`${new Date().toISOString()}: ${value.name}: ${data.status}\n`);
         logFile.end();
 
         return { name: value.name, status: data.status, url: value.url };

@@ -57,7 +57,7 @@ const postValueSets = async () => {
     );
 
     if (createValueSets) {
-      const savedValueSets = await saveValueSets(createValueSets.flat());
+      const savedValueSets = await saveValueSets(createValueSets.flat(), 50);
 
       const savedStatus = await saveStatus(savedValueSets);
 
