@@ -40,7 +40,7 @@ const postValueSets = async () => {
 
     const createValueSets = await Promise.all(
       valuesets.map(async (valueSet) => Promise.all(
-        valueSet.map(async (value) => {
+        valueSet.map(async (value, index) => {
           const payload = JSON.stringify(value);
           const config = {
             method: 'post',
