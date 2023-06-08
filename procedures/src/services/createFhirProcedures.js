@@ -4,12 +4,13 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import authHeader from '../config/auth';
+import delay from '../config/delay';
 
 dotenv.config();
 
 const { BAHMNI_SERVER_URL } = process.env;
 
-export const saveValueSets = async (valueSets, delay) => {
+export const saveValueSets = async (valueSets) => {
   try {
     const savedValueSets = await Promise.all(
       valueSets.map(async (value, index) => {
@@ -22,9 +23,7 @@ export const saveValueSets = async (valueSets, delay) => {
           },
         };
 
-        // Introduce a delay before each request
-        // eslint-disable-next-line no-promise-executor-return
-        await new Promise((resolve) => setTimeout(resolve, index * delay));
+        await delay(index, 200);
 
         const { data } = await axios(config);
         console.log({ name: value.name, url: data });

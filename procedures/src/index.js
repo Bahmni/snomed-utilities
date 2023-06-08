@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { convertToJSON, convertToValueSet } from './services/formatter';
 import { saveValueSets, saveStatus, printStatus } from './services/createFhirProcedures';
+import delay from './config/delay';
 
 dotenv.config();
 
@@ -50,8 +51,7 @@ const postValueSets = async () => {
             },
             data: payload,
           };
-          // eslint-disable-next-line no-promise-executor-return
-          await new Promise((resolve) => setTimeout(resolve, index * 50));
+          await delay(index, 200);
           await axios(config);
           return value;
         }),
@@ -59,7 +59,7 @@ const postValueSets = async () => {
     );
 
     if (createValueSets) {
-      const savedValueSets = await saveValueSets(createValueSets.flat(), 50);
+      const savedValueSets = await saveValueSets(createValueSets.flat());
 
       const savedStatus = await saveStatus(savedValueSets);
 
