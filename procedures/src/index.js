@@ -50,6 +50,8 @@ const postValueSets = async () => {
             },
             data: payload,
           };
+          // eslint-disable-next-line no-promise-executor-return
+          await new Promise((resolve) => setTimeout(resolve, index * 50));
           await axios(config);
           return value;
         }),
