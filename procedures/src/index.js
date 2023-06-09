@@ -51,7 +51,7 @@ const postValueSets = async () => {
             },
             data: payload,
           };
-          await delay(index, 200);
+          await delay(index, 1000);
           await axios(config);
           return value;
         }),
