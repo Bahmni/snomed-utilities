@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { convertToJSON, convertToValueSet } from './services/formatter';
 import { saveValueSets, saveStatus, printStatus } from './services/createFhirProcedures';
+import delay from './config/delay';
 
 dotenv.config();
 
@@ -40,7 +41,7 @@ const postValueSets = async () => {
 
     const createValueSets = await Promise.all(
       valuesets.map(async (valueSet) => Promise.all(
-        valueSet.map(async (value) => {
+        valueSet.map(async (value, index) => {
           const payload = JSON.stringify(value);
           const config = {
             method: 'post',
@@ -50,6 +51,7 @@ const postValueSets = async () => {
             },
             data: payload,
           };
+          await delay(index, 1000);
           await axios(config);
           return value;
         }),

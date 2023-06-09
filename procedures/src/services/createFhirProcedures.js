@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import authHeader from '../config/auth';
+import delay from '../config/delay';
 
 dotenv.config();
 
@@ -12,7 +13,7 @@ const { BAHMNI_SERVER_URL } = process.env;
 export const saveValueSets = async (valueSets) => {
   try {
     const savedValueSets = await Promise.all(
-      valueSets.map(async (value) => {
+      valueSets.map(async (value, index) => {
         const config = {
           method: 'POST',
           url: `${BAHMNI_SERVER_URL}?valueSetId=${value.name}&locale=en&conceptClass=Procedure&conceptDatatype=N/A&contextRoot=Procedure Orders`,
@@ -21,6 +22,8 @@ export const saveValueSets = async (valueSets) => {
             Authorization: authHeader,
           },
         };
+
+        await delay(index, 200);
 
         const { data } = await axios(config);
         console.log({ name: value.name, url: data });
@@ -52,11 +55,10 @@ export const saveStatus = async (valueSets) => {
         };
         const { data } = await axios.request(config);
 
-        const logFile = fs.createWriteStream(
-          logsPath,
-          { flags: 'a' },
+        const logFile = fs.createWriteStream(logsPath, { flags: 'a' });
+        logFile.write(
+          `${new Date().toISOString()}: ${value.name}: ${data.status}\n`,
         );
-        logFile.write(`${new Date().toISOString()}: ${value.name}: ${data.status}\n`);
         logFile.end();
 
         return { name: value.name, status: data.status, url: value.url };
