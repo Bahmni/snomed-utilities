@@ -9,11 +9,13 @@ import delay from '../config/delay';
 
 dotenv.config();
 
-const agent = new https.Agent({
-  rejectUnauthorized: false,
-});
-
 const { BAHMNI_SERVER_URL } = process.env;
+
+const agent = BAHMNI_SERVER_URL.includes('localhost') ? {} : {
+  httpsAgent: new https.Agent({
+    rejectUnauthorized: false,
+  }),
+};
 
 export const saveValueSets = async (valueSets) => {
   try {
@@ -26,7 +28,7 @@ export const saveValueSets = async (valueSets) => {
             'Content-Type': 'application/json',
             Authorization: authHeader,
           },
-          httpsAgent: agent,
+          ...agent,
         };
 
         await delay(index, 200);
@@ -58,7 +60,7 @@ export const saveStatus = async (valueSets) => {
             Accept: '*/*',
             Authorization: authHeader,
           },
-          httpsAgent: agent,
+          ...agent,
         };
         const { data } = await axios.request(config);
 
