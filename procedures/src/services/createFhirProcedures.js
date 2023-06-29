@@ -3,12 +3,19 @@ import axios from 'axios';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+import https from 'https';
 import authHeader from '../config/auth';
 import delay from '../config/delay';
 
 dotenv.config();
 
 const { BAHMNI_SERVER_URL } = process.env;
+
+const agent = BAHMNI_SERVER_URL.includes('localhost') ? {} : {
+  httpsAgent: new https.Agent({
+    rejectUnauthorized: false,
+  }),
+};
 
 export const saveValueSets = async (valueSets) => {
   try {
@@ -21,6 +28,7 @@ export const saveValueSets = async (valueSets) => {
             'Content-Type': 'application/json',
             Authorization: authHeader,
           },
+          ...agent,
         };
 
         await delay(index, 200);
@@ -52,6 +60,7 @@ export const saveStatus = async (valueSets) => {
             Accept: '*/*',
             Authorization: authHeader,
           },
+          ...agent,
         };
         const { data } = await axios.request(config);
 
