@@ -11,11 +11,11 @@ dotenv.config();
 
 const { BAHMNI_SERVER_URL } = process.env;
 
-const agent = BAHMNI_SERVER_URL.includes('localhost') ? {} : {
+const agent = BAHMNI_SERVER_URL.includes('localhost') ? {
   httpsAgent: new https.Agent({
     rejectUnauthorized: false,
   }),
-};
+} : {};
 
 export const saveValueSets = async (valueSets) => {
   try {
