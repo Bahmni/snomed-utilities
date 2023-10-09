@@ -12,17 +12,17 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 
 1. Install node/npm (node version: 10.11.0). Preferably use nvm, so that you have control over which project uses which version of node. See:
 
-   * [how to install Node using nvm](https://github.com/nvm-sh/nvm).
-   * [how to install NodeJS on mac](https://www.newline.co/@Adele/how-to-install-nodejs-and-npm-on-macos--22782681)
+   - [how to install Node using nvm](https://github.com/nvm-sh/nvm).
+   - [how to install NodeJS on mac](https://www.newline.co/@Adele/how-to-install-nodejs-and-npm-on-macos--22782681)
 
 ### Environment Variables
 
-| Variable          | Description                     | Example                                                                       |
-| ----------------- | ------------------------------- | ----------------------------------------------------------------------------- |
-| VALUESET_URL      | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet                            |
-| BAHMNI_SERVER_URL | Bahmni procedures endpoint      | https://{bahmni.instance.com}/openmrs/ws/rest/v1/terminologyServices/valueSet |
-| USERNAME          | Bahmni username                 | superman                                                                      |
-| PASSWORD          | Bahmi password                  | Admin123                                                                      |
+| Variable          | Description                    | Example                                            |
+| ----------------- | ------------------------------ | -------------------------------------------------- |
+| VALUESET_URL      | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet |
+| BAHMNI_SERVER_URL | Bahmni Server URL              | https://{bahmni.instance.com}                      |
+| USERNAME          | Bahmni username                | superman                                           |
+| PASSWORD          | Bahmi password                 | Admin123                                           |
 
 ### Inputs
 
@@ -30,8 +30,8 @@ Disclaimer: Bahmni doesn't ship with any curated content of procedures. It is in
 
 1. copy your procedures csv file into the `public` directory. The csv file **MUST** have the following fields:
 
-| Target code                                     | Body Site Categories   |
-| ----------------------------------------------- | ---------------------- |
+| Target code                                     | Body Site Categories  |
+| ----------------------------------------------- | --------------------- |
 | snomed code for the procedure e.g. (1119420003) | Body site e.g. (Head) |
 
 ### Commands
@@ -40,3 +40,5 @@ Run these commands from within the root folder.
 
 1. `npm install`
 2. `npm start`
+
+Note: To sync procedures in Bahmni with Termninology Server, provide the argument `syncValueSets` to `npm start` command (`npm start syncValueSets`)

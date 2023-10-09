@@ -9,13 +9,16 @@ import delay from '../config/delay';
 
 dotenv.config();
 
-const { BAHMNI_SERVER_URL } = process.env;
+const { BAHMNI_SERVER_URL, BAHMNI_VALUESET_ENDPOINT, BAHMNI_CONCEPT_ENDPOINT } =
+  process.env;
 
-const agent = BAHMNI_SERVER_URL.includes('localhost') ? {
-  httpsAgent: new https.Agent({
-    rejectUnauthorized: false,
-  }),
-} : {};
+const agent = BAHMNI_SERVER_URL.includes('localhost')
+  ? {
+      httpsAgent: new https.Agent({
+        rejectUnauthorized: false,
+      }),
+    }
+  : {};
 
 export const saveValueSets = async (valueSets) => {
   try {
@@ -23,7 +26,7 @@ export const saveValueSets = async (valueSets) => {
       valueSets.map(async (value, index) => {
         const config = {
           method: 'POST',
-          url: `${BAHMNI_SERVER_URL}?valueSetId=${value.name}&locale=en&conceptClass=Procedure&conceptDatatype=N/A&contextRoot=Procedure Orders`,
+          url: `${BAHMNI_SERVER_URL}${BAHMNI_VALUESET_ENDPOINT}?valueSetId=${value.name}&locale=en&conceptClass=Procedure&conceptDatatype=N/A&contextRoot=Procedure Orders`,
           headers: {
             'Content-Type': 'application/json',
             Authorization: authHeader,
@@ -36,7 +39,7 @@ export const saveValueSets = async (valueSets) => {
         const { data } = await axios(config);
         console.log({ name: value.name, url: data });
         return { name: value.name, url: data };
-      }),
+      })
     );
     return savedValueSets;
   } catch (err) {
@@ -66,12 +69,12 @@ export const saveStatus = async (valueSets) => {
 
         const logFile = fs.createWriteStream(logsPath, { flags: 'a' });
         logFile.write(
-          `${new Date().toISOString()}: ${value.name}: ${data.status}\n`,
+          `${new Date().toISOString()}: ${value.name}: ${data.status}\n`
         );
         logFile.end();
 
         return { name: value.name, status: data.status, url: value.url };
-      }),
+      })
     );
     return savedStatus;
   } catch (err) {
@@ -87,4 +90,37 @@ export const printStatus = async (statuses) => {
     const count = statuses.filter((s) => s.status === item).length;
     console.log(`${item}: ${count} \n`);
   });
+};
+
+export const syncValueSetsFromTS = async () => {
+  try {
+    const config = {
+      method: 'GET',
+      url: `${BAHMNI_SERVER_URL}${BAHMNI_CONCEPT_ENDPOINT}?q=Procedure Orders&v=custom:(uuid,display,set,name,setMembers:(uuid,name))`,
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: authHeader,
+      },
+      ...agent,
+    };
+    const { data } = await axios(config);
+    const procedureOrderConceptSet = data?.results?.filter(
+      (concept) => concept.display === 'Procedure Orders'
+    );
+    if (procedureOrderConceptSet.length === 0) {
+      process.stdout.write('Concept Procedure Orders not found\n');
+      return;
+    }
+    const existingValueSets = procedureOrderConceptSet[0].setMembers.map(
+      (setMember) => ({ name: setMember.name.name })
+    );
+    const savedValueSets = await saveValueSets(existingValueSets);
+    const savedStatus = await saveStatus(savedValueSets);
+    const printStatuses = await printStatus(savedStatus);
+    if (printStatuses) {
+      process.stdout.write('Value sets saved successfully\n');
+    }
+  } catch (err) {
+    console.log(err);
+  }
 };
