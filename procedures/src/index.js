@@ -9,6 +9,8 @@ import {
   saveStatus,
   printStatus,
   syncValueSetsFromTS,
+  fetchProcedureConceptsFromBahmni,
+  deleteBodySitesInBahmni,
 } from './services/createFhirProcedures';
 import delay from './config/delay';
 
@@ -57,7 +59,7 @@ const postValueSets = async () => {
               },
               data: payload,
             };
-            await delay(index, 1000);
+            await delay(index + 1, 1000);
             await axios(config);
             return value;
           })
@@ -81,11 +83,15 @@ const postValueSets = async () => {
   }
 };
 
-const start = () => {
-  const isSyncValueSets = process.argv.includes('syncValueSets');
+const start = async () => {
+  const isSyncValueSets = process.argv.includes('sync');
+  const fetchProcedureConcepts = process.argv.includes('fetch');
   if (isSyncValueSets) {
     syncValueSetsFromTS();
+  } else if (fetchProcedureConcepts) {
+    fetchProcedureConceptsFromBahmni();
   } else {
+    await deleteBodySitesInBahmni();
     postValueSets();
   }
 };

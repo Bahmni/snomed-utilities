@@ -41,4 +41,8 @@ Run these commands from within the root folder.
 1. `npm install`
 2. `npm start`
 
-Note: To sync procedures in Bahmni with Termninology Server, provide the argument `syncValueSets` to `npm start` command (`npm start syncValueSets`)
+This utility supports multiple options.
+
+- To Sync already loaded procedures in Bahmni with the Valuesets in the terminology server, run the command `npm start sync`
+- To fetch loaded procedures in Bahmni, run the command `npm start fetch`. CSV file generated in the directory `public/procedureConcepts_exported_timestamp.csv`
+- To override the procedure orders in openMRS and Snowstorm sever with the CSV configuration, run the command `npm start replace`. This is the default option. It uses the CSV file in the directory `public/`
