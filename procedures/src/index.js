@@ -13,6 +13,7 @@ import {
   deleteBodySitesInBahmni,
 } from './services/createFhirProcedures';
 import delay from './config/delay';
+import snowstormAuthHeader from './config/snowstorm-lite-auth';
 
 dotenv.config();
 
@@ -56,6 +57,7 @@ const postValueSets = async () => {
               url: VALUESET_URL,
               headers: {
                 'Content-Type': 'application/json',
+                Authorization: snowstormAuthHeader,
               },
               data: payload,
             };
