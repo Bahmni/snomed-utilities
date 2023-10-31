@@ -10,7 +10,7 @@ import delay from '../config/delay';
 dotenv.config();
 
 const {
-  VALUESET_URL,
+  SNOWSTORM_VALUESET_URL,
   BAHMNI_SERVER_URL,
   BAHMNI_VALUESET_ENDPOINT,
   BAHMNI_CONCEPT_ENDPOINT,
@@ -188,7 +188,7 @@ export const fetchProcedureConceptsFromBahmni = async () => {
 };
 
 export const deleteValueSetByName = async (valueSetName) => {
-  const fullUrl = `${VALUESET_URL}/$expand?url=http://bahmni.org/fhir/ValueSet/${valueSetName}`;
+  const fullUrl = `${SNOWSTORM_VALUESET_URL}/$expand?url=http://bahmni.org/fhir/ValueSet/${valueSetName}`;
   const tsConfig = {
     method: 'GET',
     url: fullUrl,
@@ -202,7 +202,7 @@ export const deleteValueSetByName = async (valueSetName) => {
   const valueSetId = data?.id;
   const vsDeleteConfig = {
     method: 'DELETE',
-    url: `${VALUESET_URL}/${valueSetId}`,
+    url: `${SNOWSTORM_VALUESET_URL}/${valueSetId}`,
     headers: {
       'Content-Type': 'application/json',
     },

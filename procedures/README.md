@@ -17,12 +17,12 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 
 ### Environment Variables
 
-| Variable          | Description                    | Example                                            |
-| ----------------- | ------------------------------ | -------------------------------------------------- |
-| VALUESET_URL      | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet |
-| BAHMNI_SERVER_URL | Bahmni Server URL              | https://{bahmni.instance.com}                      |
-| USERNAME          | Bahmni username                | superman                                           |
-| PASSWORD          | Bahmi password                 | Admin123                                           |
+| Variable               | Description                    | Example                                            |
+| ---------------------- | ------------------------------ | -------------------------------------------------- |
+| SNOWSTORM_VALUESET_URL | Snowstorm server value set url | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet |
+| BAHMNI_SERVER_URL      | Bahmni Server URL              | https://{bahmni.instance.com}                      |
+| BAHMNI_USERNAME        | Bahmni username                | superman                                           |
+| BAHMNI_PASSWORD        | Bahmi password                 | Admin123                                           |
 
 ### Inputs
 

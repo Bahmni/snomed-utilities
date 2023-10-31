@@ -13,10 +13,11 @@ import {
   deleteBodySitesInBahmni,
 } from './services/createFhirProcedures';
 import delay from './config/delay';
+import snowstormAuthHeader from './config/snowstorm-lite-auth';
 
 dotenv.config();
 
-const { VALUESET_URL, BAHMNI_SERVER_URL } = process.env;
+const { SNOWSTORM_VALUESET_URL, BAHMNI_SERVER_URL } = process.env;
 const postValueSets = async () => {
   try {
     const outputFiles = fs.readdirSync('output');
@@ -53,9 +54,10 @@ const postValueSets = async () => {
             const payload = JSON.stringify(value);
             const config = {
               method: 'post',
-              url: VALUESET_URL,
+              url: SNOWSTORM_VALUESET_URL,
               headers: {
                 'Content-Type': 'application/json',
+                Authorization: snowstormAuthHeader,
               },
               data: payload,
             };
@@ -101,8 +103,10 @@ const validateProperties = () => {
     console.error('Value for BAHMNI_SERVER_URL is not provided in .env file');
     process.exit();
   }
-  if (!VALUESET_URL) {
-    console.error('Value for VALUESET_URL is not provided in .env file');
+  if (!SNOWSTORM_VALUESET_URL) {
+    console.error(
+      'Value for SNOWSTORM_VALUESET_URL is not provided in .env file'
+    );
     process.exit();
   }
 };
