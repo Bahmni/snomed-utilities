@@ -12,6 +12,10 @@ import {
   fetchProcedureConceptsFromBahmni,
   deleteBodySitesInBahmni,
 } from './services/createFhirProcedures';
+import {
+  getProcedureOrdersFromBahmni,
+  createSummary,
+} from './services/summary';
 import delay from './config/delay';
 import snowstormAuthHeader from './config/snowstorm-lite-auth';
 
@@ -88,13 +92,21 @@ const postValueSets = async () => {
 const start = async () => {
   const isSyncValueSets = process.argv.includes('sync');
   const fetchProcedureConcepts = process.argv.includes('fetch');
+
+  const existingBodySites = await getProcedureOrdersFromBahmni();
+
   if (isSyncValueSets) {
     syncValueSetsFromTS();
   } else if (fetchProcedureConcepts) {
     fetchProcedureConceptsFromBahmni();
   } else {
     await deleteBodySitesInBahmni();
-    postValueSets();
+    await postValueSets();
+  }
+
+  if (!fetchProcedureConcepts) {
+    const updatedBodySites = await getProcedureOrdersFromBahmni();
+    createSummary(existingBodySites, updatedBodySites);
   }
 };
 

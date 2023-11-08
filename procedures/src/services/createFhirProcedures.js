@@ -38,10 +38,9 @@ export const saveValueSets = async (valueSets) => {
           ...agent,
         };
 
-        await delay(index, 200);
+        await delay(index, 500);
 
         const { data } = await axios(config);
-        console.log({ name: value.name, url: data });
         return { name: value.name, url: data };
       })
     );
@@ -76,7 +75,6 @@ export const saveStatus = async (valueSets) => {
           `${new Date().toISOString()}: ${value.name}: ${data.status}\n`
         );
         logFile.end();
-
         return { name: value.name, status: data.status, url: value.url };
       })
     );
@@ -87,13 +85,39 @@ export const saveStatus = async (valueSets) => {
   }
 };
 
-export const printStatus = async (statuses) => {
-  const status = [...new Set(statuses.map((s) => s.status))];
+export const printStatus = async (statuses, delayInMMillis = 1000) => {
+  if (delayInMMillis <= 0) return;
+  console.log(
+    'Verifying whether procedures are saved successfully in Bahmni\n'
+  );
+  try {
+    let acceptedCount = 0;
+    await Promise.all(
+      statuses.map(async (value, index) => {
+        const config = {
+          method: 'GET',
+          url: value.url.replace('http:', 'https:'),
+          headers: {
+            Accept: '*/*',
+            Authorization: authHeader,
+          },
+          ...agent,
+        };
 
-  status.forEach((item) => {
-    const count = statuses.filter((s) => s.status === item).length;
-    console.log(`${item}: ${count} \n`);
-  });
+        await delay(index, 500);
+        const { data } = await axios(config);
+        if (data.status === 'accepted') {
+          acceptedCount += 1;
+        }
+        return { name: value.name, status: data.status, url: value.url };
+      })
+    );
+    if (acceptedCount > 0) {
+      await printStatus(statuses, delayInMMillis - 250);
+    }
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 export const syncValueSetsFromTS = async () => {
@@ -260,9 +284,6 @@ export const deleteBodySitesInBahmni = async () => {
     };
     await axios(postConfigForSet);
     await delay(3, 1000);
-    console.log(
-      'Body sites removed successfully from Procedure Orders in Bahmni'
-    );
 
     const bodySiteSetMembers = procedureOrderConceptSet[0].setMembers;
     bodySiteSetMembers.forEach(async (bodySite) => {
