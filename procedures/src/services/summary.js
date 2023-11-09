@@ -79,6 +79,7 @@ const createSummaryTree = (combinedBodySites) => {
     const treeMembers = {};
     let deletedCount = 0;
     let addedCount = 0;
+    let updatedCount = 0;
     for (let index = 0; index < bodySite.setMembers.length; index++) {
       const procedure = bodySite.setMembers[index];
       let nameElement = procedure.names?.filter(
@@ -91,16 +92,22 @@ const createSummaryTree = (combinedBodySites) => {
         )[0];
       }
       const procedureName = nameElement?.name;
-      const procedureStatus =
-        nameElement.existing && nameElement.updated
-          ? ''
-          : nameElement.existing
-          ? 'Deleted'
-          : 'Added';
+      let procedureStatus = nameElement.status;
+      if (!procedureStatus) {
+        procedureStatus =
+          nameElement.existing && nameElement.updated
+            ? ''
+            : nameElement.existing
+            ? 'Deleted'
+            : 'Added';
+      }
+
       if (procedureStatus === 'Deleted') {
         deletedCount += 1;
       } else if (procedureStatus === 'Added') {
         addedCount += 1;
+      } else if (procedureStatus === 'Updated') {
+        updatedCount += 1;
       }
       const memberNode = procedureStatus
         ? `${procedureName} (${procedureStatus})`
@@ -112,7 +119,7 @@ const createSummaryTree = (combinedBodySites) => {
       bodySiteStatus = 'Added';
     } else if (deletedCount === bodySite.setMembers.length) {
       bodySiteStatus = 'Deleted';
-    } else if (addedCount > 0 || deletedCount > 0) {
+    } else if (updatedCount > 0 || addedCount > 0 || deletedCount > 0) {
       bodySiteStatus = 'Updated';
     }
     const bodySiteWithStatus = bodySiteStatus
@@ -170,7 +177,14 @@ export const createSummary = (existingBodySites, updatedBodySites) => {
                   exitingProcedureName.uuid === name.uuid
               );
             if (existingProcedureName) {
-              return { ...name, existing: true };
+              const namesUpdated =
+                procedureOrder.names.length !=
+                existingSetMemberProcedureOrder.names.length;
+              return {
+                ...name,
+                existing: true,
+                status: namesUpdated ? 'Updated' : '',
+              };
             }
             return { ...name, existing: false };
           }

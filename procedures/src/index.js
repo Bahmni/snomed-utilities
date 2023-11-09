@@ -96,7 +96,7 @@ const start = async () => {
   const existingBodySites = await getProcedureOrdersFromBahmni();
 
   if (isSyncValueSets) {
-    syncValueSetsFromTS();
+    await syncValueSetsFromTS();
   } else if (fetchProcedureConcepts) {
     fetchProcedureConceptsFromBahmni();
   } else {
