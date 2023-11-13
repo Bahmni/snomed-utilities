@@ -67,6 +67,7 @@ const postValueSets = async () => {
             };
             await delay(index + 1, 1000);
             await axios(config);
+            console.log(`Value set ${value.name} created successfully`);
             return value;
           })
         )

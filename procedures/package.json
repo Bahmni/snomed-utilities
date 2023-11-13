@@ -22,7 +22,7 @@
     "eslint-plugin-import": "^2.27.5"
   },
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.1",
     "csv-parser": "^3.0.0",
     "dotenv": "^16.0.3",
     "lodash": "^4.17.21",
