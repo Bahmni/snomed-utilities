@@ -221,7 +221,6 @@ export const deleteValueSetByName = async (valueSetName) => {
     },
     ...agent,
   };
-  await delay(1, 1000);
   const { data } = await axios(tsConfig);
   const valueSetId = data?.id;
   const vsDeleteConfig = {
@@ -232,8 +231,8 @@ export const deleteValueSetByName = async (valueSetName) => {
     },
     ...agent,
   };
-  await delay(2, 1000);
   await axios(vsDeleteConfig);
+  console.log(`Value set ${valueSetName} deleted successfully\n`);
 };
 
 export const deleteBodySitesInBahmni = async () => {
@@ -283,12 +282,11 @@ export const deleteBodySitesInBahmni = async () => {
       data: payloadForSet,
     };
     await axios(postConfigForSet);
-    await delay(3, 1000);
 
     const bodySiteSetMembers = procedureOrderConceptSet[0].setMembers;
-    bodySiteSetMembers.forEach(async (bodySite) => {
+    await bodySiteSetMembers.forEach(async (bodySite) => {
       const bodySiteName = bodySite.display;
-      deleteValueSetByName(bodySiteName);
+      await deleteValueSetByName(bodySiteName);
     });
   } catch (err) {
     console.log(err);
