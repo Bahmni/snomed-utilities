@@ -3,6 +3,7 @@ import fs from 'fs';
 import axios from 'axios';
 import dotenv from 'dotenv';
 import path from 'path';
+import { parse } from 'csv-parse/sync';
 import { convertToJSON, convertToValueSet } from './services/formatter';
 import {
   saveValueSets,
@@ -31,32 +32,28 @@ const postValueSets = async () => {
 
     const csvFiles = fs.readdirSync('public');
     const filteredCsvFiles = csvFiles.filter(
-      (file) => path.extname(file) === '.csv'
+      (file) => path.extname(file) === '.tsv'
     );
 
-    if (filteredCsvFiles.length === 0) return;
+    const data = [];
+    filteredCsvFiles.forEach(file => {
+      const fileContent = fs.readFileSync(`public/${file}`, 'utf8')
+      const rows = parse(fileContent, { delimiter: '\t', from_line: 2})
+      data.push(...rows);
+    })
+    const valueSets = convertToValueSet(data);
 
-    const valuesets = await Promise.all(
-      filteredCsvFiles
-        .map(async (file) => {
-          const csvFile = fs.createReadStream(`public/${file}`);
-          const data = await convertToJSON(csvFile);
-          const valueSet = convertToValueSet(data);
-          await fs.writeFileSync(
-            `output/${file.replace('.csv', '.json')}`,
-            JSON.stringify(valueSet)
-          );
-          return valueSet;
-        })
-        .flat()
-    );
+    valueSets.forEach(valueSet => {
+        fs.appendFileSync(
+          `output/valueSets.ndjson`,
+          JSON.stringify(valueSet) + '\n'
+        );
+    })
 
-    const createValueSets = await Promise.all(
-      valuesets.map(async (valueSet) =>
-        Promise.all(
-          valueSet.map(async (value, index) => {
-            const payload = JSON.stringify(value);
-            const config = {
+    const createdFHIRValueSets = await Promise.all(
+       valueSets.map(async (valueSet) => {
+            const payload = JSON.stringify(valueSet);
+            const request = {
               method: 'post',
               url: SNOWSTORM_VALUESET_URL,
               headers: {
@@ -65,17 +62,14 @@ const postValueSets = async () => {
               },
               data: payload,
             };
-            await delay(index + 1, 1000);
-            await axios(config);
-            console.log(`Value set ${value.name} created successfully`);
-            return value;
+            await axios(request);
+            console.log(`Value set ${valueSet.name} created successfully`);
+            return request;
           })
-        )
-      )
-    );
+        );
 
-    if (createValueSets) {
-      const savedValueSets = await saveValueSets(createValueSets.flat());
+    if (valueSets) {
+      const savedValueSets = await saveValueSets(valueSets);
 
       const savedStatus = await saveStatus(savedValueSets);
 

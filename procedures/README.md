@@ -30,11 +30,11 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 
 Disclaimer: Bahmni doesn't ship with any curated content of procedures. It is individual's responsibility that is making use of this utility to upload procedures based on their requirements.
 
-1. copy your procedures csv file into the `public` directory. The csv file **MUST** have the following fields:
+1. copy your procedures csv file into the `public` directory. The tab separated csv file **MUST** have the following fields:
 
-| Target code                                     | Body Site Categories  |
-| ----------------------------------------------- | --------------------- |
-| snomed code for the procedure e.g. (1119420003) | Body site e.g. (Head) |
+| Body Site Category                   | SNOMED ECL Query                                                                                                                                                   |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Body site (for example: Head & Neck) | Query (for example: ^816080008 \|International Patient Summary\| : << 363704007 \|Procedure site\| = << 774007 \|Structure of head and/or neck (body structure)\|) |
 
 ### Commands
 
