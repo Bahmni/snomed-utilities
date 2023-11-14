@@ -1,0 +1,436 @@
+Procedure Name,Target code,Body Site Categories
+"Radionuclide therapy for hyperthyroidism (procedure)",64978007,Head & Neck
+"Block dissection of cervical lymph nodes (procedure)",178283002,Head & Neck
+"Langenbeck operation, cleft palate repair (procedure)",12132004,Head & Neck
+"Implantation of cochlear prosthetic device (procedure)",359612003,Head & Neck
+"Cervical arthrodesis by anterior technique (procedure)",59703009,Head & Neck
+"Jaw and temporomandibular joint operations (procedure)",265703000,Head & Neck
+"Laser assisted subepithelial keratomileusis (procedure)",414582004,Head & Neck
+"Implantation of prosthetic intraocular lens (procedure)",69724002,Head & Neck
+"Mechanical vitrectomy by pars plana approach (procedure)",87021001,Head & Neck
+"Aspiration of cataract by phacoemulsification (procedure)",84149000,Head & Neck
+"Correction of atresia of external meatus of ear (procedure)",84088001,Head & Neck
+"Primary excision of cervical intervertebral disc (procedure)",178517008,Head & Neck
+"Implantation of posterior chamber intraocular lens (procedure)",373415004,Head & Neck
+"Myringotomy and insertion of tympanic ventilation tube (procedure)",284532000,Head & Neck
+"Myringotomy and insertion of long-term ventilation tube (procedure)",275001008,Head & Neck
+"Dorrance operation, push-back operation for cleft palate (procedure)",12826007,Head & Neck
+"Cataract extraction and implantation of intraocular lens (procedure)",385468004,Head & Neck
+"Fluoroscopic angiography of carotid artery with contrast (procedure)",420171008,Head & Neck
+"Implantation of cochlear prosthetic device, single channel (procedure)",43815004,Head & Neck
+"Implantation of cochlear prosthetic device, multiple channels (procedure)",50676004,Head & Neck
+"Fusion of cervicothoracic region of spine by anterior approach (procedure)",448808006,Head & Neck
+"Myringotomy and insertion of short-term tympanic ventilation tube (procedure)",172676009,Head & Neck
+"Implantation of cochlear prosthetic device, electrode and receiver (procedure)",359608009,Head & Neck
+"Thromboendarterectomy with graft of carotid artery by neck incision (procedure)",15023006,Head & Neck
+"Intracapsular cataract extraction and insertion of intraocular lens (procedure)",308695001,Head & Neck
+"Arthrodesis by anterior interbody technique of cervical region below C2 with bone graft (procedure)",53976000,Head & Neck
+"Lumbar and lumbosacral fusion by posterior technique (procedure)",34238000,Pelvis
+"Abdominal hysterectomy and left salpingo-oophorectomy (procedure)",302191001,Pelvis
+"Abdominal hysterectomy and right salpingo-oophorectomy (procedure)",302190000,Pelvis
+"Cerclage of cervix during pregnancy by vaginal approach (procedure)",90442009,Pelvis
+"Cerclage of cervix during pregnancy by abdominal approach (procedure)",46681009,Pelvis
+"Total hysterectomy with removal of both tubes and ovaries (procedure)",86477000,Pelvis
+"Fusion of lumbosacral region of spine by anterior approach (procedure)",449048009,Pelvis
+"Aspiration curettage of uterus for termination of pregnancy (procedure)",391897002,Pelvis
+"Fusion of lumbosacral region of spine by posterior approach (procedure)",448942003,Pelvis
+"Removal of intraluminal foreign body from uterus without incision (procedure)",28136008,Pelvis
+"Total abdominal hysterectomy with bilateral salpingo-oophorectomy (procedure)",116144002,Pelvis
+"Immediate repair of obstetric laceration of uterus or cervix uteri (procedure)",177218001,Pelvis
+"Abdominal hysterectomy with colpo-urethrocystopexy, Marshall-Marchetti-Krantz type (procedure)",13254001,Pelvis
+"Induced abortion following intra-amniotic injection with hysterotomy (procedure)",52660002,Pelvis
+"Complete transurethral resection of prostate, including control of postoperative bleeding (procedure)",87795007,Pelvis
+"Tympanotomy (procedure)",397760009,Ear
+"Stapedectomy (procedure)",69130005,Ear
+"Myringoplasty (procedure)",396490007,Ear
+"Removal of ear wax (procedure)",385904005,Ear
+"Operation on the ear (procedure)",68265005,Ear
+"Repair of middle ear (procedure)",386556002,Ear
+"Drainage of external ear (procedure)",36995006,Ear
+"Tympanoplasty with mastoidectomy (procedure)",232188001,Ear
+"Implantation of cochlear electrode (procedure)",44218004,Ear
+"Myringotomy and insertion of T tube (procedure)",172679002,Ear
+"Implantation of intracochlear prosthesis (procedure)",172732009,Ear
+"Implantation of cochlear prosthetic device (procedure)",359612003,Ear
+"Correction of atresia of external meatus of ear (procedure)",84088001,Ear
+"Myringotomy and insertion of tympanic ventilation tube (procedure)",284532000,Ear
+"Myringotomy and insertion of long-term ventilation tube (procedure)",275001008,Ear
+"Implantation of cochlear prosthetic device, single channel (procedure)",43815004,Ear
+"Implantation of cochlear prosthetic device, multiple channels (procedure)",50676004,Ear
+"Myringotomy and insertion of short-term tympanic ventilation tube (procedure)",172676009,Ear
+"Implantation of cochlear prosthetic device, electrode and receiver (procedure)",359608009,Ear
+"Turbinectomy (procedure)",51302004,Nose
+"Rhinoseptoplasty (procedure)",20805001,Nose
+"Nasal septoplasty (procedure)",13529000,Nose
+"Nasal polypectomy (procedure)",172825008,Nose
+"Reconstruction of nose (procedure)",232470004,Nose
+"Operation on nasal septum (procedure)",5781000,Nose
+"Nasal septoplasty with graft (procedure)",53610001,Nose
+"Cauterization of internal nose (procedure)",172812000,Nose
+"Cauterization of nasal turbinate (procedure)",172805009,Nose
+"Submucous resection of nasal septum (procedure)",172790004,Nose
+"Rhinocheiloplasty repair for cleft lip (procedure)",8616005,Nose
+"Vitrectomy (procedure)",75732000,Eye
+"Laser iridotomy (procedure)",371345007,Eye
+"Scleral buckling (procedure)",26786002,Eye
+"Radial keratotomy (procedure)",51683002,Eye
+"Corneal transplant (procedure)",60656008,Eye
+"Anterior vitrectomy (procedure)",172555009,Eye
+"Laser trabeculoplasty (procedure)",172485001,Eye
+"Epiretinal dissection (procedure)",172571009,Eye
+"Extraction of cataract (procedure)",54885007,Eye
+"Enucleation of eyeball (procedure)",172132001,Eye
+"Penetrating keratoplasty (procedure)",42101009,Eye
+"Extraction of lens of eye (procedure)",75170007,Eye
+"Trabeculectomy ab externo (procedure)",30880003,Eye
+"Forceps extraction of lens (procedure)",172524003,Eye
+"Photorefractive keratectomy (procedure)",397516006,Eye
+"Exchange of intraocular lens (procedure)",231751005,Eye
+"Yttrium-aluminum-garnet laser capsulotomy of lens (procedure)",172532006,Eye
+"Surgery of cataract of left eye (procedure)",860930005,Eye
+"Laser photocoagulation to retina (procedure)",399867007,Eye
+"Extracapsular extraction of lens (procedure)",13793006,Eye
+"Intracapsular extraction of lens (procedure)",172523009,Eye
+"Surgical procedure on eye proper (procedure)",373353005,Eye
+"Surgery of cataract of right eye (procedure)",860934001,Eye
+"Intracapsular cataract extraction (procedure)",404628003,Eye
+"Laser assisted in situ keratomileusis (procedure)",312965008,Eye
+"Repair of retina for retinal detachment (procedure)",8920006,Eye
+"Laser assisted subepithelial keratomileusis (procedure)",414582004,Eye
+"Implantation of prosthetic intraocular lens (procedure)",69724002,Eye
+"Mechanical vitrectomy by pars plana approach (procedure)",87021001,Eye
+"Aspiration of cataract by phacoemulsification (procedure)",84149000,Eye
+"Implantation of posterior chamber intraocular lens (procedure)",373415004,Eye
+"Cataract extraction and implantation of intraocular lens (procedure)",385468004,Eye
+"Intracapsular cataract extraction and insertion of intraocular lens (procedure)",308695001,Eye
+"Laryngectomy (procedure)",72791001,Neck
+"Thyroidectomy (procedure)",13619001,Neck
+"Operation on neck (procedure)",37508003,Neck
+"Parathyroidectomy (procedure)",53304009,Neck
+"Total thyroidectomy (procedure)",24443003,Neck
+"Cervical arthrodesis (procedure)",81099000,Neck
+"Excision of lamina of cervical vertebra (procedure)",445429009,Neck
+"Subtotal thyroidectomy (procedure)",30956003,Neck
+"Craniocervical spinal fusion (procedure)",6976007,Neck
+"Radionuclide therapy for hyperthyroidism (procedure)",64978007,Neck
+"Block dissection of cervical lymph nodes (procedure)",178283002,Neck
+"Cervical arthrodesis by anterior technique (procedure)",59703009,Neck
+"Primary excision of cervical intervertebral disc (procedure)",178517008,Neck
+"Fusion of cervicothoracic region of spine by anterior approach (procedure)",448808006,Neck
+"Arthrodesis by anterior interbody technique of cervical region below C2 with bone graft (procedure)",53976000,Neck
+"Bidirectional Glenn shunt procedure of left superior vena cava (procedure)",443989003,Chest
+"Implantation of tricuspid valve prosthesis or synthetic device (procedure)",8069005,Chest
+"Bidirectional Glenn shunt procedure of right superior vena cava (procedure)",444034006,Chest
+"Creation of conduit between right ventricle and pulmonary artery (procedure)",44777001,Chest
+"Closure of ventricular septal defect using fluoroscopic guidance (procedure)",442087005,Chest
+"Implantation of cardioverter defibrillator with one electrode lead (procedure)",425435003,Chest
+"Initial implantation of electrode into cardiac atrium and ventricle (procedure)",87825006,Chest
+"Implantation of cardioverter defibrillator with two electrode leads (procedure)",427508005,Chest
+"Percutaneous replacement of aortic valve using fluoroscopic guidance (procedure)",441873006,Chest
+"Implantation of intravenous dual chamber permanent cardiac pacemaker (procedure)",310582005,Chest
+"Implantation of cardioverter defibrillator with three electrode leads (procedure)",442249009,Chest
+"Anastomosis of pulmonary-subclavian artery by Blalock-Taussig operation (procedure)",13662000,Chest
+"Repair of atrial septal defect with prosthesis by closed heart technique (procedure)",30123000,Chest
+"Insertion of permanent pacemaker with transvenous electrodes, ventricular (procedure)",54974006,Chest
+"Percutaneous transluminal coronary angioplasty with rotoablation, single vessel (procedure)",397431004,Chest
+"Percutaneous transluminal balloon angioplasty with insertion of stent into coronary artery (procedure)",429639007,Chest
+"Aortopulmonary reconstruction with right ventricle to pulmonary arterial valveless conduit (procedure)",429616001,Chest
+"Construction of left ventricle to aorta tunnel with right ventricle to pulmonary artery valved conduit (procedure)",429620002,Chest
+"Tooth extraction (procedure)",55162003,Dental
+"Fitting of denture (procedure)",1269321004,Dental
+"Insertion of denture (procedure)",1269322006,Dental
+"Hemisection of tooth (procedure)",23580000,Dental
+"Fitting of partial denture (procedure)",1269323001,Dental
+"Fitting of complete denture (procedure)",1144279009,Dental
+"Insertion of partial denture (procedure)",1269324007,Dental
+"Bypass of stomach with short limb Roux-en-Y gastroenterostomy (procedure)",443906008,Abdomen
+"Removal of intraluminal foreign body from uterus without incision (procedure)",28136008,Abdomen
+"Total abdominal hysterectomy with bilateral salpingo-oophorectomy (procedure)",116144002,Abdomen
+"Immediate repair of obstetric laceration of uterus or cervix uteri (procedure)",177218001,Abdomen
+"Excision of lamina of lumbar vertebra for decompression of spinal cord (procedure)",427752004,Abdomen
+"Immediate repair of obstetric laceration of vagina and floor of pelvis (procedure)",177220003,Abdomen
+"Immediate repair of obstetric laceration of perineum and sphincter of anus (procedure)",177219009,Abdomen
+"Abdominal hysterectomy with colpo-urethrocystopexy, Marshall-Marchetti-Krantz type (procedure)",13254001,Abdomen
+"Induced abortion following intra-amniotic injection with hysterotomy (procedure)",52660002,Abdomen
+"Complete transurethral resection of prostate, including control of postoperative bleeding (procedure)",87795007,Abdomen
+"Endovascular repair of infrarenal abdominal aortic aneurysm using endovascular stent graft (procedure)",429167002,Abdomen
+"Primary open reduction and internal fixation of proximal femoral fracture with screw/nail and plate device (procedure)",265132005,Abdomen
+"Total elbow replacement (procedure)",87366001,Upper Limbs
+"Total shoulder replacement (procedure)",42262007,Upper Limbs
+"Operative procedure on hand (procedure)",112746006,Upper Limbs
+"Decompression of median nerve (procedure)",47534009,Upper Limbs
+"Operative procedure on shoulder region (procedure)",78559005,Upper Limbs
+"Repair of rotator cuff by suture (procedure)",61774002,Upper Limbs
+"Endoscopic carpal tunnel release (procedure)",171841007,Upper Limbs
+"Complete axillary lymphadenectomy (procedure)",79544006,Upper Limbs
+"Excision of ganglion cyst of wrist (procedure)",178095009,Upper Limbs
+"Amputation of finger, except thumb (procedure)",76956004,Upper Limbs
+"Repair of musculotendinous cuff of shoulder (procedure)",56060000,Upper Limbs
+"Repair of ruptured supraspinatus tendon, acute (procedure)",59213002,Upper Limbs
+"Release for de Quervain's tenosynovitis of hand (procedure)",3713005,Upper Limbs
+"Repair of ruptured supraspinatus tendon, chronic (procedure)",66692001,Upper Limbs
+"Repair of complete shoulder cuff avulsion, chronic (procedure)",12660003,Upper Limbs
+"Open acromioplasty for decompression of rotator cuff (procedure)",297709009,Upper Limbs
+"Open reduction of fracture of humerus with internal fixation (procedure)",37053006,Upper Limbs
+"Neuroplasty and transposition of median nerve at carpal tunnel (procedure)",359901001,Upper Limbs
+"Open reduction of fracture of radius and ulna with internal fixation (procedure)",608785007,Upper Limbs
+"Open reduction of fracture of carpals and metacarpals with internal fixation (procedure)",68432004,Upper Limbs
+"Amputation of toe (procedure)",371186005,Lower Limbs
+"Procedure on foot (procedure)",118716003,Lower Limbs
+"Excision of bunion (procedure)",27480002,Lower Limbs
+"Arthroscopy of knee joint (procedure)",309431009,Lower Limbs
+"Hammer toe operation (procedure)",127601009,Lower Limbs
+"Knee joint operation (procedure)",179342005,Lower Limbs
+"Arthroplasty of knee (procedure)",19063003,Lower Limbs
+"Amputation above-knee (procedure)",79733001,Lower Limbs
+"Total knee replacement (procedure)",609588000,Lower Limbs
+"Total replacement of hip (procedure)",52734007,Lower Limbs
+"Amputation of lower limb (procedure)",397117006,Lower Limbs
+"Hip joint reconstruction (procedure)",119614000,Lower Limbs
+"Arthroscopic meniscectomy (procedure)",302490008,Lower Limbs
+"Resurfacing of the patella (procedure)",239503002,Lower Limbs
+"Revision of hip replacement (procedure)",112727005,Lower Limbs
+"Operative procedure on knee (procedure)",6240004,Lower Limbs
+"Operative procedure on foot (procedure)",61661004,Lower Limbs
+"Resurfacing of head of femur (procedure)",445185007,Lower Limbs
+"Pubiotomy to assist delivery (procedure)",387711001,Lower Limbs
+"Prosthetic arthroplasty of hip (procedure)",398010007,Lower Limbs
+"Creation of aortofemoral shunt (procedure)",40059006,Lower Limbs
+"Ligation of long saphenous vein (procedure)",265542003,Lower Limbs
+"Primary repair of femoral hernia (procedure)",264959005,Lower Limbs
+"Excision of ganglion cyst of knee (procedure)",178097001,Lower Limbs
+"Total replacement of left knee joint (procedure)",443681002,Lower Limbs
+"Total replacement of right knee joint (procedure)",443682009,Lower Limbs
+"Partial hip replacement by prosthesis (procedure)",386649003,Lower Limbs
+"Femoral-popliteal artery bypass graft (procedure)",112828007,Lower Limbs
+"Arthroscopic total medial meniscectomy (procedure)",179382003,Lower Limbs
+"Ligation of varicose vein of lower limb (procedure)",15617002,Lower Limbs
+"Excision of varicose vein of lower limb (procedure)",398027004,Lower Limbs
+"Arthroscopy of knee with meniscus repair (procedure)",84877006,Lower Limbs
+"Arthroscopic partial medial meniscectomy (procedure)",179381005,Lower Limbs
+"Arthroscopic partial lateral meniscectomy (procedure)",179383008,Lower Limbs
+"Amputation of leg through tibia and fibula (procedure)",88312006,Lower Limbs
+"Open repair of femoral hernia using sutures (procedure)",771626001,Lower Limbs
+"Chondrectomy of semilunar cartilage of knee (procedure)",6148000,Lower Limbs
+"Femoral-popliteal artery bypass graft with vein (procedure)",50807007,Lower Limbs
+"Ligation and stripping of varicose vein of lower limb (procedure)",449320003,Lower Limbs
+"Total prosthetic replacement of hip joint using cement (procedure)",265157000,Lower Limbs
+"Total prosthetic replacement of knee joint using cement (procedure)",265170009,Lower Limbs
+"Arthroscopically aided anterior cruciate ligament repair (procedure)",55244002,Lower Limbs
+"Arthroscopy of knee with medial and lateral meniscectomy (procedure)",8874001,Lower Limbs
+"Total prosthetic replacement of hip joint not using cement (procedure)",265160007,Lower Limbs
+"Reconstruction of anterior cruciate ligament of knee joint (procedure)",239431009,Lower Limbs
+"Open reduction of fracture of femur with internal fixation (procedure)",57470004,Lower Limbs
+"Closed reduction of fracture of femur with internal fixation (procedure)",272300006,Lower Limbs
+"Open reduction of fracture of tibia and fibula with internal fixation (procedure)",74011006,Lower Limbs
+"Primary open reduction and internal fixation of proximal femoral fracture with screw/nail and plate device (procedure)",265132005,Lower Limbs
+"Lumbar puncture (procedure)",277762005,Back
+"Lumbar spinal fusion (procedure)",50172003,Back
+"Lumbosacral arthrodesis (procedure)",25789004,Back
+"Primary lumbar discectomy (procedure)",178618008,Back
+"Fusion of posterior lumbar spine (procedure)",277764006,Back
+"Lumbar and lumbosacral fusion by posterior technique (procedure)",34238000,Back
+"Fusion of lumbosacral region of spine by anterior approach (procedure)",449048009,Back
+"Fusion of lumbosacral region of spine by posterior approach (procedure)",448942003,Back
+"Fusion of thoracolumbar region of spine by anterior approach (procedure)",448943008,Back
+"Fusion of thoracolumbar region of spine by posterior approach (procedure)",448944002,Back
+"Excision of lamina of lumbar vertebra for decompression of spinal cord (procedure)",427752004,Back
+"Total replacement of hip (procedure)",52734007,Hip
+"Hip joint reconstruction (procedure)",119614000,Hip
+"Revision of hip replacement (procedure)",112727005,Hip
+"Resurfacing of head of femur (procedure)",445185007,Hip
+"Pubiotomy to assist delivery (procedure)",387711001,Hip
+"Prosthetic arthroplasty of hip (procedure)",398010007,Hip
+"Partial hip replacement by prosthesis (procedure)",386649003,Hip
+"Total prosthetic replacement of hip joint using cement (procedure)",265157000,Hip
+"Total prosthetic replacement of hip joint not using cement (procedure)",265160007,Hip
+"Primary open reduction and internal fixation of proximal femoral fracture with screw/nail and plate device (procedure)",265132005,Hip
+"Induced abortion following intra-amniotic injection with hysterotomy (procedure)",52660002,Female Reproductive System
+"Vasectomy (procedure)",22523008,Male Reproductive System
+"Orchidopexy (procedure)",85419002,Male Reproductive System
+"Circumcision (procedure)",72310004,Male Reproductive System
+"Prostatectomy (procedure)",90470006,Male Reproductive System
+"Testis excision (procedure)",120001005,Male Reproductive System
+"Open prostatectomy (procedure)",176258007,Male Reproductive System
+"Male sterilization (procedure)",399141000,Male Reproductive System
+"Standard circumcision (procedure)",176548009,Male Reproductive System
+"Radical prostatectomy (procedure)",26294005,Male Reproductive System
+"Fixation of left testis (procedure)",735023007,Male Reproductive System
+"Fixation of right testis (procedure)",735024001,Male Reproductive System
+"Needle biopsy of prostate (procedure)",236258004,Male Reproductive System
+"Transurethral prostatectomy (procedure)",90199006,Male Reproductive System
+"Radical perineal prostatectomy (procedure)",8782006,Male Reproductive System
+"Radical retropubic prostatectomy (procedure)",65551008,Male Reproductive System
+"Implantation of penile prosthesis (procedure)",47411002,Male Reproductive System
+"Implantation of radioactive seed into prostate (procedure)",425767004,Male Reproductive System
+"Segmental excision and ligation of bilateral vas deferens (procedure)",17293009,Male Reproductive System
+"Complete transurethral resection of prostate, including control of postoperative bleeding (procedure)",87795007,Male Reproductive System
+"Transfusion of blood product (procedure)",116859006,Transfusion
+"Dermabrasion (procedure)",37236007,Skin & Mucous Membranes
+"Grafting to skin (procedure)",304040003,Skin & Mucous Membranes
+"Operation on skin (procedure)",392011001,Skin & Mucous Membranes
+"Change of dressing (procedure)",18949003,Skin & Mucous Membranes
+"Excision of skin tag (procedure)",309430005,Skin & Mucous Membranes
+"Cauterization of wart (procedure)",307273008,Skin & Mucous Membranes
+"Excision of papilloma (procedure)",303648002,Skin & Mucous Membranes
+"Excision of cyst of skin (procedure)",301890004,Skin & Mucous Membranes
+"Pilonidal sinus operation (procedure)",174396007,Skin & Mucous Membranes
+"Excision of wedge of nail (procedure)",177735003,Skin & Mucous Membranes
+"Excision of sebaceous cyst (procedure)",300589005,Skin & Mucous Membranes
+"Excision of lesion of skin (procedure)",35646002,Skin & Mucous Membranes
+"Total avulsion of nail plate (procedure)",183668008,Skin & Mucous Membranes
+"Excision biopsy of skin lesion (procedure)",312968005,Skin & Mucous Membranes
+"Radical excision of skin lesion (procedure)",44166002,Skin & Mucous Membranes
+"Excision of malignant skin tumor (procedure)",301889008,Skin & Mucous Membranes
+"Removal of mole of skin by excision (procedure)",303650005,Skin & Mucous Membranes
+"Delayed hypersensitivity skin test for tuberculin purified protein derivative (procedure)",424294008,Skin & Mucous Membranes
+"Myotomy of colon (procedure)",73536002,Muscle
+"Strabismus surgery (procedure)",41453009,Muscle
+"Operation on diaphragm (procedure)",53266006,Muscle
+"Repair of paraesophageal diaphragmatic hernia (procedure)",359908007,Muscle
+"Immediate repair of obstetric laceration of perineum and sphincter of anus (procedure)",177219009,Muscle
+"Occlusion of patent ductus arteriosus using embolization coil (procedure)",441676000,Peripheral Vessels
+"Bidirectional Glenn shunt procedure of left superior vena cava (procedure)",443989003,Peripheral Vessels
+"Bidirectional Glenn shunt procedure of right superior vena cava (procedure)",444034006,Peripheral Vessels
+"Creation of conduit between right ventricle and pulmonary artery (procedure)",44777001,Peripheral Vessels
+"Thromboendarterectomy with graft of carotid artery by neck incision (procedure)",15023006,Peripheral Vessels
+"Anastomosis of pulmonary-subclavian artery by Blalock-Taussig operation (procedure)",13662000,Peripheral Vessels
+"Percutaneous transluminal coronary angioplasty with rotoablation, single vessel (procedure)",397431004,Peripheral Vessels
+"Percutaneous transluminal balloon angioplasty with insertion of stent into coronary artery (procedure)",429639007,Peripheral Vessels
+"Aortopulmonary reconstruction with right ventricle to pulmonary arterial valveless conduit (procedure)",429616001,Peripheral Vessels
+"Endovascular repair of infrarenal abdominal aortic aneurysm using endovascular stent graft (procedure)",429167002,Peripheral Vessels
+"Percutaneous transluminal balloon angioplasty of coarctation of aorta with insertion of stent (procedure)",443829004,Peripheral Vessels
+"Construction of left ventricle to aorta tunnel with right ventricle to pulmonary artery valved conduit (procedure)",429620002,Peripheral Vessels
+"Insertion of permanent pacemaker with transvenous electrodes, ventricular (procedure)",54974006,Cardiac
+"Percutaneous transluminal coronary angioplasty with rotoablation, single vessel (procedure)",397431004,Cardiac
+"Percutaneous transluminal balloon angioplasty with insertion of stent into coronary artery (procedure)",429639007,Cardiac
+"Construction of left ventricle to aorta tunnel with right ventricle to pulmonary artery valved conduit (procedure)",429620002,Cardiac
+"Tonsillectomy (procedure)",173422009,Mouth and Pharynx
+"Parotidectomy (procedure)",81870009,Mouth and Pharynx
+"Tooth extraction (procedure)",55162003,Mouth and Pharynx
+"Oral examination (procedure)",122856003,Mouth and Pharynx
+"Adenoid excision (procedure)",119954001,Mouth and Pharynx
+"Fitting of denture (procedure)",1269321004,Mouth and Pharynx
+"Operation on mouth (procedure)",384676001,Mouth and Pharynx
+"Replacing dentures (regime/therapy)",225100009,Mouth and Pharynx
+"Repair of cleft lip (procedure)",234647001,Mouth and Pharynx
+"Insertion of denture (procedure)",1269322006,Mouth and Pharynx
+"Hemisection of tooth (procedure)",23580000,Mouth and Pharynx
+"Fitting of partial denture (procedure)",1269323001,Mouth and Pharynx
+"Fitting of complete denture (procedure)",1144279009,Mouth and Pharynx
+"Insertion of partial denture (procedure)",1269324007,Mouth and Pharynx
+"Repair of bilateral cleft lip (procedure)",234650003,Mouth and Pharynx
+"Dental consultation and report (procedure)",34043003,Mouth and Pharynx
+"Repair of cleft of soft palate (procedure)",234892006,Mouth and Pharynx
+"Tonsillectomy and adenoidectomy (procedure)",28913000,Mouth and Pharynx
+"Thompson operation, cleft lip repair (procedure)",57217008,Mouth and Pharynx
+"Lemesurier operation, cleft lip repair (procedure)",89432003,Mouth and Pharynx
+"Rhinocheiloplasty repair for cleft lip (procedure)",8616005,Mouth and Pharynx
+"Dorrance operation, push-back operation for cleft palate (procedure)",12826007,Mouth and Pharynx
+"Colostomy (procedure)",398740003,GI Tract
+"Gastrostomy (procedure)",54956002,GI Tract
+"Colonoscopy (procedure)",73761001,GI Tract
+"Excision of stomach structure (procedure)",53442002,GI Tract
+"Colocolostomy (procedure)",89522007,GI Tract
+"Sigmoidoscopy (procedure)",24420007,GI Tract
+"Excision of appendix (procedure)",80146002,GI Tract
+"Total colectomy (procedure)",26390003,GI Tract
+"Myotomy of colon (procedure)",73536002,GI Tract
+"Ureteroileostomy (procedure)",243306000,GI Tract
+"Hemorrhoidectomy (procedure)",24496007,GI Tract
+"Excision of colon (procedure)",23968004,GI Tract
+"Subtotal gastrectomy (procedure)",49209004,GI Tract
+"Dilation of esophagus (procedure)",195565004,GI Tract
+"Screening colonoscopy (procedure)",444783004,GI Tract
+"Creation of ileostomy (procedure)",173977007,GI Tract
+"Emergency appendectomy (procedure)",174036004,GI Tract
+"Procedure on intestine (procedure)",118831003,GI Tract
+"Attention to ileostomy (procedure)",173984004,GI Tract
+"Pancreaticoduodenectomy (procedure)",116241004,GI Tract
+"Colonoscopic polypectomy (procedure)",311774002,GI Tract
+"Attention to gastrostomy (procedure)",235222001,GI Tract
+"Bypass gastroenterostomy (procedure)",18692006,GI Tract
+"Small intestine excision (procedure)",107938000,GI Tract
+"Partial resection of colon (procedure)",43075005,GI Tract
+"Laparoscopic appendectomy (procedure)",6025007,GI Tract
+"Esophagogastroduodenoscopy (procedure)",76009000,GI Tract
+"Roux-en-Y gastrojejunostomy (procedure)",173747005,GI Tract
+"Esophagogastric fundoplasty (procedure)",48835001,GI Tract
+"Laparoscopic bypass of stomach (procedure)",708983005,GI Tract
+"Forced manual dilatation of anus (procedure)",302605004,GI Tract
+"Flexible fiberoptic sigmoidoscopy (procedure)",44441009,GI Tract
+"Transplantation of small intestine (procedure)",56283009,GI Tract
+"Partial colectomy with anastomosis (procedure)",44378008,GI Tract
+"Complete external hemorrhoidectomy (procedure)",61498008,GI Tract
+"Partial excision of small intestine (procedure)",54357003,GI Tract
+"Percutaneous endoscopic insertion of gastrostomy tube (procedure)",235159007,GI Tract
+"Simple ligature of hemorrhoid (procedure)",84282008,GI Tract
+"Hartmann operation, rectal resection (procedure)",16564004,GI Tract
+"Intestinal bypass for morbid obesity (procedure)",59657005,GI Tract
+"Fiberoptic colonoscopy through colostomy (procedure)",8180007,GI Tract
+"Destruction of hemorrhoids by sclerotherapy (procedure)",8422009,GI Tract
+"Anastomosis of small intestine to small intestine (procedure)",44119001,GI Tract
+"Endoscopy and biopsy of upper gastrointestinal tract (procedure)",445982009,GI Tract
+"Laparoscopic Nissen fundoplication using abdominal approach (procedure)",314128006,GI Tract
+"Bypass of stomach with short limb Roux-en-Y gastroenterostomy (procedure)",443906008,GI Tract
+"Immediate repair of obstetric laceration of perineum and sphincter of anus (procedure)",177219009,GI Tract
+"Turbinectomy (procedure)",51302004,Respiratory Tract
+"Laryngectomy (procedure)",72791001,Respiratory Tract
+"Bronchoscopy (procedure)",10847001,Respiratory Tract
+"Tonsillectomy (procedure)",173422009,Respiratory Tract
+"Rhinoseptoplasty (procedure)",20805001,Respiratory Tract
+"Adenoid excision (procedure)",119954001,Respiratory Tract
+"Nasal septoplasty (procedure)",13529000,Respiratory Tract
+"Operation on lung (procedure)",387714009,Respiratory Tract
+"Lobectomy of lung (procedure)",173171007,Respiratory Tract
+"Transplant of lung (procedure)",88039007,Respiratory Tract
+"Ethmoid sinusectomy (procedure)",31501000,Respiratory Tract
+"Lung tumor excision (procedure)",287310004,Respiratory Tract
+"Incision of trachea (procedure)",48387007,Respiratory Tract
+"Total pneumonectomy (procedure)",49795001,Respiratory Tract
+"Operation on trachea (procedure)",86800006,Respiratory Tract
+"Operation on bronchus (procedure)",26476002,Respiratory Tract
+"Double lung transplant (procedure)",232658009,Respiratory Tract
+"Wedge excision of lung (procedure)",232632009,Respiratory Tract
+"Total lobectomy of lung (procedure)",359623004,Respiratory Tract
+"Operation on nasal septum (procedure)",5781000,Respiratory Tract
+"Attention to tracheostomy (procedure)",232613003,Respiratory Tract
+"Operation on accessory sinus (procedure)",112788002,Respiratory Tract
+"Nasal septoplasty with graft (procedure)",53610001,Respiratory Tract
+"Replacement of tracheal stent (procedure)",28510009,Respiratory Tract
+"Cauterization of internal nose (procedure)",172812000,Respiratory Tract
+"Irrigation of maxillary antrum (procedure)",303633008,Respiratory Tract
+"Insertion of artificial airway (procedure)",426153007,Respiratory Tract
+"Tonsillectomy and adenoidectomy (procedure)",28913000,Respiratory Tract
+"Cauterization of nasal turbinate (procedure)",172805009,Respiratory Tract
+"Submucous resection of nasal septum (procedure)",172790004,Respiratory Tract
+"Heart-lung transplant with recipient cardiectomy-pneumonectomy (procedure)",32477003,Respiratory Tract
+"Open acromioplasty for decompression of rotator cuff (procedure)",297709009,Joints
+"Total prosthetic replacement of hip joint using cement (procedure)",265157000,Joints
+"Total prosthetic replacement of knee joint using cement (procedure)",265170009,Joints
+"Arthroscopically aided anterior cruciate ligament repair (procedure)",55244002,Joints
+"Arthroscopy of knee with medial and lateral meniscectomy (procedure)",8874001,Joints
+"Total prosthetic replacement of hip joint not using cement (procedure)",265160007,Joints
+"Reconstruction of anterior cruciate ligament of knee joint (procedure)",239431009,Joints
+"Fusion of lumbosacral region of spine by anterior approach (procedure)",449048009,Joints
+"Fusion of lumbosacral region of spine by posterior approach (procedure)",448942003,Joints
+"Fusion of thoracolumbar region of spine by anterior approach (procedure)",448943008,Joints
+"Fusion of thoracolumbar region of spine by posterior approach (procedure)",448944002,Joints
+"Neuroplasty and transposition of median nerve at carpal tunnel (procedure)",359901001,Joints
+"Fusion of cervicothoracic region of spine by anterior approach (procedure)",448808006,Joints
+"Discectomy for intervertebral herniated disc, nucleus pulposus (procedure)",89355001,Joints
+"Open reduction of fracture of carpals and metacarpals with internal fixation (procedure)",68432004,Joints
+"Arthrodesis by anterior interbody technique of cervical region below C2 with bone graft (procedure)",53976000,Joints
+"Primary open reduction and internal fixation of proximal femoral fracture with screw/nail and plate device (procedure)",265132005,Joints
+"Removal of suture (procedure)",30549001,Suture Removal
+"Repair of mitral valve using fluoroscopic guidance (procedure)",432394003,Fluoroscopy
+"Fluoroscopic angiography of carotid artery with contrast (procedure)",420171008,Fluoroscopy
+"Closure of patent foramen ovale using fluoroscopic guidance (procedure)",432670006,Fluoroscopy
+"Closure of atrial septal defect using fluoroscopic guidance (procedure)",432114008,Fluoroscopy
+"Closure of ventricular septal defect using fluoroscopic guidance (procedure)",442087005,Fluoroscopy
+"Percutaneous replacement of aortic valve using fluoroscopic guidance (procedure)",441873006,Fluoroscopy
+"Echocardiography (procedure)",40701008,Ultrasonography
+"Dating/booking ultrasound scan (procedure)",169229007,Ultrasonography
+"Exercise stress echocardiography (procedure)",433233004,Ultrasonography
+"Transesophageal echocardiography (procedure)",105376000,Ultrasonography
+"Ultrasound scan for fetal anomaly (procedure)",408814002,Ultrasonography
