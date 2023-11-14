@@ -17,18 +17,18 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 
 ### Environment Variables
 
-| Variable               | Description                                                 | Example                                            |
-| ---------------------- |-------------------------------------------------------------|----------------------------------------------------|
-| SNOWSTORM_VALUESET_URL | Snowstorm server value set url                              | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet |
+| Variable                | Description                                                 | Example                                            |
+| ----------------------- | ----------------------------------------------------------- | -------------------------------------------------- |
+| SNOWSTORM_VALUESET_URL  | Snowstorm server value set url                              | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet |
 | SNOWSTORM_LITE_USERNAME | Snowstorm server username (required if SNOWSTORM LITE used) | admin                                              |
 | SNOWSTORM_LITE_PASSWORD | Snowstorm server password (required if SNOWSTORM LITE used) | Admin123                                           |
-| BAHMNI_SERVER_URL      | Bahmni Server URL                                           | https://{bahmni.instance.com}                      |
-| BAHMNI_USERNAME        | Bahmni username                                             | superman                                           |
-| BAHMNI_PASSWORD        | Bahmi password                                              | Admin123                                           |
+| BAHMNI_SERVER_URL       | Bahmni Server URL                                           | https://{bahmni.instance.com}                      |
+| BAHMNI_USERNAME         | Bahmni username                                             | superman                                           |
+| BAHMNI_PASSWORD         | Bahmi password                                              | Admin123                                           |
 
 ### Inputs
 
-Disclaimer: Bahmni doesn't ship with any curated content of procedures. It is individual's responsibility that is making use of this utility to upload procedures based on their requirements.
+Disclaimer: This repository includes sample reference procedure orders in public/procedures.csv. Users of this utility are solely responsible for uploading procedures according to their specific requirements.
 
 1. copy your procedures csv file into the `public` directory. The csv file **MUST** have the following fields:
 
@@ -49,7 +49,7 @@ This utility supports multiple options.
 - To fetch loaded procedures in Bahmni, run the command `npm start fetch`. CSV file generated in the directory `public/procedureConcepts_exported_timestamp.csv`
 - To override the procedure orders in openMRS and Snowstorm sever with the CSV configuration, run the command `npm start replace`. This is the default option. It uses the CSV file in the directory `public/`
 
-This utility provides the summary of procedures and body sites in the form of tree. (Pre and post changes in Bahmni Procedure Orders) 
+This utility provides the summary of procedures and body sites in the form of tree. (Pre and post changes in Bahmni Procedure Orders)
 
 ```
 Summary
@@ -67,4 +67,3 @@ Summary
    ├─ Excision of external ear, complete amputation
    └─ Destruction of lesion of internal nose by external approach
 ```
-
