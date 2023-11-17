@@ -17,14 +17,14 @@ These steps need to performed ONLY the FIRST TIME you set up this code.
 
 ### Environment Variables
 
-| Variable                | Description                                                 | Example                                            |
-| ----------------------- | ----------------------------------------------------------- | -------------------------------------------------- |
-| SNOWSTORM_VALUESET_URL  | Snowstorm server value set url                              | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet |
-| SNOWSTORM_LITE_USERNAME | Snowstorm server username (required if SNOWSTORM LITE used) | admin                                              |
-| SNOWSTORM_LITE_PASSWORD | Snowstorm server password (required if SNOWSTORM LITE used) | Admin123                                           |
-| BAHMNI_SERVER_URL       | Bahmni Server URL                                           | https://{bahmni.instance.com}                      |
-| BAHMNI_USERNAME         | Bahmni username                                             | superman                                           |
-| BAHMNI_PASSWORD         | Bahmi password                                              | Admin123                                           |
+| Variable                | Description                                                 | Example                                                                                                                                |
+| ----------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| SNOWSTORM_VALUESET_URL  | Snowstorm server value set url                              | https://snowstorm.snomed.mybahmni.in/fhir/ValueSet Use http://localhost:9191/fhir/ValueSet for SNOWSTORM-LITE in the local environment |
+| SNOWSTORM_LITE_USERNAME | Snowstorm server username (required if SNOWSTORM LITE used) | admin                                                                                                                                  |
+| SNOWSTORM_LITE_PASSWORD | Snowstorm server password (required if SNOWSTORM LITE used) | Admin123                                                                                                                               |
+| BAHMNI_SERVER_URL       | Bahmni Server URL                                           | https://{bahmni.instance.com}                                                                                                          |
+| BAHMNI_USERNAME         | Bahmni username                                             | superman                                                                                                                               |
+| BAHMNI_PASSWORD         | Bahmi password                                              | Admin123                                                                                                                               |
 
 ### Inputs
 
